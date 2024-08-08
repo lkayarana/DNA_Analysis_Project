@@ -12,7 +12,7 @@ This project performs various bioinformatics analyses on a DNA sequence and visu
 
 ```bash
 python scripts/dna_analysis.py
-
+```
 
 
 ## Usage
