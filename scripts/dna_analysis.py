@@ -12,12 +12,16 @@ from visualalization import motif_visualization, gc_content_graph, nukleotide_fr
 
 
 def main():
+    if not os.path.exists('results'):
+        os.makedirs('results')
+
+
     dna = dna_input()
     motif = motif_input()
     mutation =mutation_input()
 
     motif_found_positions = motif_search(dna, motif)
-    display_result(motif_found_positions, "Motif Found Positions")
+    display_result(motif_found_positions, "Motif Positions")
     motif_visualization(dna, motif_found_positions, motif)
 
     gc_content = gc_content_calculator(dna)
@@ -29,7 +33,7 @@ def main():
     nukleotide_frequency_graph(frequency)
 
     mutation_found_positions = mutation_search(dna, mutation)
-    display_result(mutation_found_positions, "Mutation Found Positions")
+    display_result(mutation_found_positions, "Mutation Positions")
 
 
 if __name__ == "__main__":
