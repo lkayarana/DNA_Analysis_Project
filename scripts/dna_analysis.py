@@ -18,15 +18,15 @@ def main():
 
     motif_found_positions = motif_search(dna, motif)
     display_result(motif_found_positions, "Motif Found Positions")
-    motif_visualizor(dna, motif_found_positions, motif)
+    motif_visualization(dna, motif_found_positions, motif)
 
     gc_content = gc_content_calculator(dna)
     display_result(gc_content, "GC Content")
     gc_content_graph(gc_content)
 
-    frequency = nucleotide_frequency(dna)
+    frequency = nucleotide_frequency(dna, mutation)
     display_result(frequency, "Nucleotide Frequency")
-    nucleotide_frequency_graph(frequency)
+    nukleotide_frequency_graph(frequency)
 
     mutation_found_positions = mutation_search(dna, mutation)
     display_result(mutation_found_positions, "Mutation Found Positions")

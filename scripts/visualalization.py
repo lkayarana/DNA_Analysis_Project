@@ -6,7 +6,7 @@ def motif_visualization(dna, motif_found_positions, motif):
         return
 
     dna_length = len(dna)
-    visual = [' '] * dna_len
+    visual = [' '] * dna_length
 
     for position in motif_found_positions:
         for i in range(len(motif)):
