@@ -1,4 +1,4 @@
-
+# DNA Analysis Project
 
 This project performs various bioinformatics analyses on a DNA sequence and visualizes the results. The project includes motif searching, GC content calculation, nucleotide frequency determination, and simple mutation analysis. Results are displayed both textually and graphically.
 
