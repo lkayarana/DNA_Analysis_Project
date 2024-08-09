@@ -1,3 +1,4 @@
+import os
 from input_handler import dna_input, motif_input, mutation_input
 from motif_search import motif_search
 from gc_content import gc_content_calculator

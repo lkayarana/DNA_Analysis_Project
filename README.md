@@ -21,28 +21,28 @@ When the program is run, it prompts the user for a DNA sequence, a motif to sear
 
 ## Example Input
 
-Please enter the DNA sequence: ATGCGATATGCGTACGTAGCTAGCTAGCGTATCGATCG
-Please enter the motif to search for: ATG
-Please enter the mutation to search for: TCG
+ - Please enter the DNA sequence: ATGCGATATGCGTACGTAGCTAGCTAGCGTATCGATCG
+ - Please enter the motif to search for: ATG
+ - Please enter the mutation to search for: TCG
 
 
 
 ## Example Output
 
 Motif Locations:
-[0, 7, 18]
+[0, 7]
 
 Motif Visualized:
-ATG    ATG           ATG              
+ATG    ATG              
 
 GC Content:
-44.44%
+50.00%
 
 Nucleotide Frequency:
-{'A': 9, 'T': 9, 'G': 10, 'C': 8}
+{'A': 9, 'T': 10, 'G': 11, 'C': 8}
 
 Mutation Locations:
-[5, 29]
+[31, 35]
 
 
 ## Graphical Outputs
